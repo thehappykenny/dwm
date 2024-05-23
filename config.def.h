@@ -14,14 +14,14 @@ static const int systraypinningfailfirst = 1;   /* 1: if pinning fails, display 
 static const int showsystray             = 1;   /* 0 means no systray */
 static const Bool viewontag         = True;     /* Switch view on tag switch */
 static const char *fonts[]          = {
-    "FiraCode Nerd Font Mono:size=16:antialias=true:autohint=true",
-    "SauceCodePro Nerd Font Mono:size=16:antialias=true:autohint=true",
-    "JetBrainsMono Nerd Font Mono:size=16:antialias=true:autohint=true",
-    "RobotoMono Nerd Font:size=16:antialias=true:autohint=true",
-    "Hack Nerd Font:size=16:antialias=true:autohint=true",
-    "BlexMono Nerd Font Mono:size=16:antialias=true:autohint=true",
-    "JoyPixels:size=12:antialias=true:autohint=true" };
-static const char dmenufont[]       = "FiraCode Nerd Font Mono:size=16";
+    "FiraCode Nerd Font Mono:size=12:antialias=true:autohint=true",
+    "SauceCodePro Nerd Font Mono:size=12:antialias=true:autohint=true",
+    "JetBrainsMono Nerd Font Mono:size=12:antialias=true:autohint=true",
+    "RobotoMono Nerd Font:size=12:antialias=true:autohint=true",
+    "Hack Nerd Font:size=12:antialias=true:autohint=true",
+    "BlexMono Nerd Font Mono:size=12:antialias=true:autohint=true",
+    "JoyPixels:size=10:antialias=true:autohint=true" };
+static const char dmenufont[]       = "FiraCode Nerd Font Mono:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
