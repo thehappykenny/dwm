@@ -44,11 +44,11 @@ static const unsigned int alphas[][3]      = {
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 /* launcher commands (They must be NULL terminated) */
-static const char* github[]      = { "google-chrome-stable", "www.github.com", NULL };
+static const char* baidu[]      = { "Firefox", "www.baidu.com", NULL };
 
 static const Launcher launchers[] = {
        /* command       name to display */
-	{ github,         "Github" },
+	{ baidu,         "Baidu" },
 };
 
 /* Lockfile */
@@ -60,8 +60,10 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
+	{ "Gimp",     NULL,       NULL,       0,            0,           -1 },
 	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	{ "wechat-universal",  NULL,       NULL,        0,       1,           -1 },
+	{ "system-config-printer",  NULL,       NULL,       0,       1,           -1 },
 };
 
 /* layout(s) */
@@ -103,7 +105,7 @@ static const char *scrot[]  = { "scrot", "-s", "preview.png", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ MODKEY,                       XK_w,      spawn,          {.v = github } },
+	{ MODKEY,                       XK_w,      spawn,          {.v = baidu } },
 	{ MODKEY,                       XK_d,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_grave,  togglescratch,  {.v = scratchpadcmd } },
