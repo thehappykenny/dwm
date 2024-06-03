@@ -44,11 +44,11 @@ static const unsigned int alphas[][3]      = {
 static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 /* launcher commands (They must be NULL terminated) */
-static const char* baidu[]      = { "Firefox", "www.baidu.com", NULL };
+static const char* baidu[]      = { "firefox", "www.baidu.com", NULL };
 
 static const Launcher launchers[] = {
        /* command       name to display */
-	{ baidu,         "Baidu" },
+	{ baidu,         "BD" },
 };
 
 /* Lockfile */
@@ -101,7 +101,7 @@ static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont,
 static const char *termcmd[]  = { "st", NULL };
 static const char scratchpadname[] = "scratchpad";
 static const char *scratchpadcmd[] = { "st", "-t", scratchpadname, "-g", "120x34", NULL };
-static const char *scrot[]  = { "scrot", "-s", "preview.png", NULL };
+static const char *scrot[]  = { "scrot", "-s", "Pictures/screenhot/preview.png", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
